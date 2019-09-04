@@ -1,0 +1,30 @@
+<div class="row align-items-center">
+  <div class="col-6">
+    First variable:
+  </div>
+  <div class="col-6">
+    <app-value-display [value]="(variables | async)?.first"></app-value-display>
+  </div>
+</div>
+
+<br>
+
+<div class="row align-items-center">
+  <div class="col-6">
+    Second variable:
+  </div>
+  <div class="col-6">
+    <app-value-display [value]="(variables | async)?.second"></app-value-display>
+  </div>
+</div>
+
+<br>
+
+<div class="row justify-content-center">
+  <div class="col-6 col-md-5">
+    <button class="btn btn-success w-100" type="submit" (click)="start()">Start</button>
+  </div>
+  <div class="col-6 col-md-5">
+    <button class="btn btn-warning w-100" type="submit" (click)="reset()">Reset</button>
+  </div>
+</div>

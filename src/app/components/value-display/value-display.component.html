@@ -1,0 +1,6 @@
+<div class="btn btn-block"
+     [ngClass]="{
+      'btn-outline-danger': value < 0,
+      'btn-outline-primary': value > 0 ,
+      'btn-outline-dark': value == 0
+      }">{{value}}</div>
